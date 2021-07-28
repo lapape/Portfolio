@@ -1,0 +1,159 @@
+/* setting reusable colors */
+:root {
+  --purple: #350246;
+  --aqua: rgb(67, 226, 173);
+  --white: antiquewhite;
+  --darkgray: #4e4e4e;
+  --darkblue: #000066;
+}
+body {
+  background-color: rgb(0, 69, 92);
+  margin: 0;
+}
+
+/* setting up flex container for header with spacing (name on left, links on right) and design */
+#main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 95px;
+  width: 100%;
+  background-color: var(--purple);
+  color: antiquewhite;
+  border-bottom: 10px var(--darkgray) solid;
+  font-family: "Cinzel", serif;
+}
+/* make ul a flex container so links are evenly spaced */
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  min-width: 300px;
+  margin-right: 25px;
+}
+/* remove default list stlying (bullets) and make items list horizontally */
+#main-header li {
+  list-style: none;
+  display: inline;
+  margin: 15px;
+  font-size: 25px;
+}
+
+/* remove default link text decoration (underline) */
+a {
+  color: var(--aqua);
+  text-decoration: none;
+}
+
+h1 {
+  margin-left: 70px;
+  font-size: 50px;
+}
+
+h2 {
+  font-size: 50px;
+  color: var(--white);
+  font-family: "Cinzel", serif;
+  margin-left: 50px;
+}
+
+h3 {
+  font-size: 40px;
+  font-family: "Cinzel", serif;
+}
+
+p {
+  margin-left: 50px;
+  color: var(--white);
+  font-family: "Raleway", sans-serif;
+  font-size: 30px;
+}
+
+/* set flex container to align content of the About-me section: items stacked on top of each other and centered */
+#About-Me {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#Profile-Container {
+  display: flex;
+  flex-direction: row;
+  margin: 70px;
+  align-items: center;
+}
+
+#About-Me img {
+  height: 400px;
+  width: 300px;
+  border: var(--purple) solid 10px;
+}
+#My-Projects {
+  text-align: center;
+  margin-bottom: 70px;
+}
+/* set up flex container for the smaller project boxes 2 rows of 2 on PC screen */
+.box-container {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+/*  made boxes flex items to stack the header ontop and center the header on the images */
+.box {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0;
+  align-items: center;
+  flex: 0 0 50%;
+  margin-bottom: 30px;
+}
+.box-container img {
+  height: 600px;
+  width: 700px;
+  display: inline;
+  border-bottom: 10px var(--darkgray) solid;
+  border-left: 10px var(--darkgray) solid;
+  border-right: 10px var(--darkgray) solid;
+}
+
+.box-header {
+  display: flex;
+  position: relative;
+  background-color: var(--purple);
+  color: var(--white);
+  height: 100px;
+  width: 700px;
+  margin: 0 0 0 0;
+  text-align: center;
+  justify-content: center;
+  border-top: 10px var(--darkgray) solid;
+  border-left: 10px var(--darkgray) solid;
+  border-right: 10px var(--darkgray) solid;
+}
+
+/* set footer to felx container to align links to the right */
+footer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 95px;
+  width: 100%;
+  background-color: var(--purple);
+  color: var(--white);
+  border-top: 10px var(--darkgray) solid;
+  margin-top: 20px;
+  font-family: "Cinzel", serif;
+}
+/* set list to flex container to space links out evenly */
+footer ul {
+  display: flex;
+  justify-content: space-between;
+  min-width: 300px;
+  margin-right: 25px;
+}
+
+footer li {
+  list-style: none;
+  display: inline;
+  font-size: 25px;
+  margin: 25px;
+}
