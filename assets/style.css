@@ -6,6 +6,10 @@
   --darkgray: #4e4e4e;
   --darkblue: #000066;
 }
+html,
+body {
+  overflow-x: hidden;
+}
 body {
   background-color: rgb(0, 69, 92);
   margin: 0;
@@ -22,6 +26,7 @@ body {
   color: antiquewhite;
   border-bottom: 10px var(--darkgray) solid;
   font-family: "Cinzel", serif;
+  margin-bottom: 50px;
 }
 /* make ul a flex container so links are evenly spaced */
 nav ul {
@@ -90,44 +95,6 @@ p {
 #My-Projects {
   text-align: center;
   margin-bottom: 70px;
-}
-/* set up flex container for the smaller project boxes 2 rows of 2 on PC screen */
-.box-container {
-  display: flex;
-  flex-wrap: wrap;
-  text-align: center;
-}
-/*  made boxes flex items to stack the header ontop and center the header on the images */
-.box {
-  display: flex;
-  flex-direction: column;
-  padding: 1rem 0;
-  align-items: center;
-  flex: 0 0 50%;
-  margin-bottom: 30px;
-}
-.box-container img {
-  height: 600px;
-  width: 700px;
-  display: inline;
-  border-bottom: 10px var(--darkgray) solid;
-  border-left: 10px var(--darkgray) solid;
-  border-right: 10px var(--darkgray) solid;
-}
-
-.box-header {
-  display: flex;
-  position: relative;
-  background-color: var(--purple);
-  color: var(--white);
-  height: 100px;
-  width: 700px;
-  margin: 0 0 0 0;
-  text-align: center;
-  justify-content: center;
-  border-top: 10px var(--darkgray) solid;
-  border-left: 10px var(--darkgray) solid;
-  border-right: 10px var(--darkgray) solid;
 }
 
 /* set footer to felx container to align links to the right */
