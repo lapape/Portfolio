@@ -82,11 +82,16 @@ p {
 
 #Profile-Container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   margin: 70px;
   align-items: center;
 }
 
+@media screen and (min-width: 1080px) {
+  #Profile-Container {
+    flex-direction: row;
+  }
+}
 #About-Me img {
   height: 400px;
   width: 300px;
@@ -97,6 +102,21 @@ p {
   margin-bottom: 70px;
 }
 
+.card img {
+  height: 451px;
+  width: 937px;
+}
+.card-body {
+  background-color: var(--purple);
+  font-family: "Raleway", sans-serif;
+  height: 307px;
+  width: 938px;
+}
+.card-title {
+  font-family: "Cinzel", serif;
+  color: var(--aqua);
+  font-size: 35px;
+}
 /* set footer to felx container to align links to the right */
 footer {
   display: flex;
